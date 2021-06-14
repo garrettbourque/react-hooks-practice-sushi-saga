@@ -7,14 +7,14 @@ function Sushi(props) {
         {/* Tell me if this sushi has been eaten! */}
         {false ? null : (
           <img
-            src={/* Give me an image source! */ null}
-            alt={/* Give me a name! */ "Sushi"}
+            src={props.img_url}
+            alt={props.name}
             width="100%"
           />
         )}
       </div>
       <h4 className="sushi-details">
-        {/* Give me a name! */} - ${/* Give me a price! */}
+        {props.name} - ${props.price}
       </h4>
     </div>
   );
